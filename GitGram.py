@@ -21,7 +21,7 @@ if ENV:
     PROJECT_NAME = environ.get('PROJECT_NAME', None)
     ip_addr = environ.get('APP_URL', None)
     # You kanged our project without forking it, we'll get you DMCA'd.
-    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/MadeByThePinsHub/GitGram")
+    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/AnuragSharma080/MizuharaSmexyBot")
 else:
     BOT_TOKEN = config.BOT_TOKEN
     PROJECT_NAME = config.PROJECT_NAME
@@ -31,7 +31,7 @@ else:
 updater = Updater(token=BOT_TOKEN, workers=1)
 dispatcher = updater.dispatcher
 
-print("If you need more help, join @GitGramChat in Telegram.")
+print("If you need more help, join @Smexy_Mizuhara in Telegram.")
 
 
 def start(_bot, update):
@@ -55,7 +55,7 @@ def support(_bot, update):
     """Links to Support"""
     message = update.effective_message
     message.reply_text(
-        f"*Getting Support*\n\nTo get support in using the bot, join [the GitGram support](https://t.me/GitGramChat).",
+        f"*Getting Support*\n\nTo get support in using the bot, join [the Mizuhara support](https://t.me/smexy_mizuhara).",
         parse_mode="markdown"
     )
 
